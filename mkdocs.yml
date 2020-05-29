@@ -1,0 +1,18 @@
+site_name: Programming Games with Phaser 3
+
+theme:
+    name: material
+    language: es
+    logo: assets/images/gamepad2.png
+    favicon: assets/images/gamepad2.png
+    
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - codehilite
+  - markdown.extensions.toc:
+      permalink: false
+ 
+
+extra_css:
+  - assets/style.css  
