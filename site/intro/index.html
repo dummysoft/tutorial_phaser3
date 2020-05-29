@@ -1,0 +1,449 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/gamepad2.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+    
+    
+      
+        <title>Estructura de un juego - Programming Games with Phaser 3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a2408e81.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../assets/style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#estructura-de-un-juego" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href=".." title="Programming Games with Phaser 3" class="md-header-nav__button md-logo" aria-label="Programming Games with Phaser 3">
+      
+  <img src="../assets/images/gamepad2.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Programming Games with Phaser 3
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Estructura de un juego
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programming Games with Phaser 3" class="md-nav__button md-logo" aria-label="Programming Games with Phaser 3">
+      
+  <img src="../assets/images/gamepad2.png" alt="logo">
+
+    </a>
+    Programming Games with Phaser 3
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Bienvenido!" class="md-nav__link">
+      Bienvenido!
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Estructura de un juego
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Estructura de un juego" class="md-nav__link md-nav__link--active">
+      Estructura de un juego
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gameloop" class="md-nav__link">
+    Gameloop
+  </a>
+  
+    <nav class="md-nav" aria-label="Gameloop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sleep-time" class="md-nav__link">
+    Sleep time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta-time" class="md-nav__link">
+    Delta time
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizacion" class="md-nav__link">
+    Visualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sonido" class="md-nav__link">
+    Sonido
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comunicaciones" class="md-nav__link">
+    Comunicaciones
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gameloop" class="md-nav__link">
+    Gameloop
+  </a>
+  
+    <nav class="md-nav" aria-label="Gameloop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sleep-time" class="md-nav__link">
+    Sleep time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta-time" class="md-nav__link">
+    Delta time
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizacion" class="md-nav__link">
+    Visualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sonido" class="md-nav__link">
+    Sonido
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comunicaciones" class="md-nav__link">
+    Comunicaciones
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="estructura-de-un-juego">Estructura de un juego</h1>
+<p>Cada vez que ejecutamos un videojuego, dentro del ordenador se están ejecutando muchos procesos de forma secuencial y ordenados. Aunque a simple vista parece que cada elemento funcione de forma independiente y con vida propia, en realidad los procesos internos están ejecutandose y coordinandose entre sí, dentro de un bucle que se ejecuta una y otra vez.</p>
+<h2 id="gameloop">Gameloop</h2>
+<p>Aunque existen muchas variantes del ciclo de vida de un juego, podríamos visualizar de forma muy resumida y básica como el siguiente esquema:</p>
+<p><img alt="Gameloop" src="../assets/images/game-loop.jpg" /> </p>
+<p>En cada iteración del bucle, el motor de juego debe leer los controles de entrada, ejecutar la lógica del juego, dibujar la pantalla y vuelta a empezar. </p>
+<p>El número de veces por segundo que se ejecuta dicho bucle es lo que llamamos FPS (frames per second), que significa el número de veces que el juego pinta la pantalla y por tanto, suponemos que actualiza la lógica del juego. A mayor número de FPS más fluido se verá el juego. Por contra a menor número de FPS más a trompicones se verá el juego. </p>
+<p>El nivel aceptable de FPS suele oscilar en torno a los 60 FPS, aunque es posible una buena experiencia de juego con un ratio incluso por debajo de los 30 FPS.</p>
+<p>En un mundo idílico, este bucle se ejecutaría de forma constante y continua a lo largo del tiempo y en todas las plataformas donde se ejecute, y el número de FPS sería altísimo. Pero en la realidad esto no es así debido a la diversidad de procesadores y la complejidad de algunos cálculos, por lo que el motor de juego debe realizar un control sobre cada iteración del bucle.</p>
+<p>Aquí es donde entran en juego dos pequeñas utilidades que suelen utilizar los motores de juego para realizar el control de FPS.</p>
+<h3 id="sleep-time">Sleep time</h3>
+<p>Si elegimos un objetivo de FPS para nuestro juego, el motor de juego al terminar la iteración en curso, podría calcular cuanto le ha llevado ejecutar la iteración completa y esperar una determinada cantidad de milisegundos para conseguir 'frenar' la ejecución de FPS. Por ejemplo, si nuestro objetivo es llegar a una tasa de 60 FPS, necesitamos ejecutar cada iteración del bucle en 1000 / 60 ms, unos 16,6 ms. Si el motor termina una iteración y detecta que ha tardado menos tiempo, manda a dormir al proceso hasta que se cumplan esos 16,6 ms.</p>
+<p>De esta forma, obtendremos una ejecución más o menos homogénea de cada iteración del juego.</p>
+<p>Además, si el procesador está muy saturado ejecutando cálculos y el motor de juego detecta un desvío muy grande en el tiempo de ejecución de esos 16,6 ms, el motor es capaz de 'saltarse' frames de forma puntual. Esto hará que la tasa de FPS sea un dato que oscile alrededor de 60 FPS, pero que no siempre será igual.</p>
+<h3 id="delta-time">Delta time</h3>
+<p>Para evitar que el salto de FPS afecte a la lógica del juego y el jugador perciba ese cambio de velocidad de ejecución, es necesario que los cálculos estén siempre basados en un delta time, o incremento de tiempo.</p>
+<p>Volvamos al ejemplo de antes, donde la tasa de refresco era de 60 FPS y por tanto 16,6 ms en cada iteración. Si queremos que un personaje se desplace en la pantalla a razón de 100 pixels por segundo, lo lógico es hacer que en cada iteración se desplace unos 1,6 pixels. Al cabo de las 60 iteraciones, se habrá desplazado 100 pixels. </p>
+<p>¿Pero que pasaría si en el segundo número 3, el motor de juego decidiera saltarse frames para liberar procesamiento y en lugar de ejecutar 60 frames en un segundo, ejecutara 55 frames? Con este escenario tendríamos que nuestro personaje se habría desplazado 100 pixels en primer segundo, otros 100 pixels el segundo y 88 pixels el tercero. El usuario percibiría que el personaje a veces va rápido y otras veces va lento.</p>
+<p>Para evitar esto, el cálculo de desplazamiento no debería estar basado en la tasa de FPS, sino en el deltaTime, el tiempo que el procesador ha gastado en la última iteración. En nuestro ejemplo, el delta time debería ser 16,6 ms en cada iteración, salvo cuando el procesador se salte algún frame, que en ese caso el delta time será mayor a 16,6 ms ya que contendrá el incremento de tiempo que el procesador no pudo gastar.</p>
+<p>Si queremos que nuestro personaje se mueva 100 pixels en 1 segundo, eso significa que deberemos moverlo 0,1 pixels cada 1 milisegundo. En las iteraciones 'buenas', desplazaremos el personaje 0,1 * 16,6 = 1,6 pixels, pero en los tiempos de saturación es posible que nuestro delta time sea por ejemplo 24 ms y tengamos que desplazar el personaje 0,1 * 24 = 2,4 pixels. </p>
+<p>Esto hará que nuestro personaje de pequeños saltos imperceptibles a la vista humana (suelen ser del orden de uno o dos pixels), pero conseguiremos que en el cómputo global de 1 segundo, se habrá desplazado exactamente 100 pixels, y el jugador no percibirá cambios de ritmo en el personaje.</p>
+<h2 id="input">Input</h2>
+<h2 id="visualizacion">Visualización</h2>
+<h2 id="sonido">Sonido</h2>
+<h2 id="comunicaciones">Comunicaciones</h2>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Pie">
+        
+          <a href=".." title="Bienvenido!" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Bienvenido!
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
