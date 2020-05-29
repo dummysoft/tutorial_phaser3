@@ -1,1 +1,1 @@
-python -m mkdocs build
+python -m mkdocs build --clean
