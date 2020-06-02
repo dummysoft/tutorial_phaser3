@@ -28,6 +28,9 @@ De esta forma, obtendremos una ejecución más o menos homogénea de cada iterac
 
 Además, si el procesador está muy saturado ejecutando cálculos y el motor de juego detecta un desvío muy grande en el tiempo de ejecución de esos 16,6 ms, el motor es capaz de 'saltarse' frames de forma puntual. Esto hará que la tasa de FPS sea un dato que oscile alrededor de 60 FPS, pero que no siempre será igual.
 
+!!! info "Consejo"
+    Para nuestra tranquilidad, de esto se encarga el motor de juego mediante la configuración inicial, por lo que no debemos preocuparnos demasiado.
+
 
 ### Delta time
 
@@ -43,7 +46,8 @@ Si queremos que nuestro personaje se mueva 100 pixels en 1 segundo, eso signific
 
 Esto hará que nuestro personaje de pequeños saltos imperceptibles a la vista humana (suelen ser del orden de uno o dos pixels), pero conseguiremos que en el cómputo global de 1 segundo, se habrá desplazado exactamente 100 pixels, y el jugador no percibirá cambios de ritmo en el personaje.
 
-
+!!! info "Consejo"
+    Para nuestra tranquilidad, de esto se encarga el motor de juego y nos calcula e informa del deltaTime que debemos utilizar en cada iteración. Nosotros tan solo debemos preocuparnos de realizar los cálculos basados siempre en este deltaTime.
 
 
 ## Input

@@ -15,7 +15,7 @@
     
     
       
-        <title>Estructura de un juego - Programming Games with Phaser 3</title>
+        <title>Empezando con Phaser 3 - Programming Games with Phaser 3</title>
       
     
     
@@ -50,7 +50,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#estructura-de-un-juego" class="md-skip">
+        <a href="#empezando-con-phaser-3" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -77,7 +77,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Estructura de un juego
+              Empezando con Phaser 3
             
           </span>
         </div>
@@ -160,6 +160,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../intro/" title="Estructura de un juego" class="md-nav__link">
+      Estructura de un juego
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -171,14 +183,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Estructura de un juego
+        Empezando con Phaser 3
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Estructura de un juego" class="md-nav__link md-nav__link--active">
-      Estructura de un juego
+    <a href="./" title="Empezando con Phaser 3" class="md-nav__link md-nav__link--active">
+      Empezando con Phaser 3
     </a>
     
       
@@ -197,23 +209,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gameloop" class="md-nav__link">
-    Gameloop
+  <a href="#herramientas" class="md-nav__link">
+    Herramientas
   </a>
   
-    <nav class="md-nav" aria-label="Gameloop">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-proyecto" class="md-nav__link">
+    Crear proyecto
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear proyecto">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sleep-time" class="md-nav__link">
-    Sleep time
+  <a href="#console" class="md-nav__link">
+    Console
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delta-time" class="md-nav__link">
-    Delta time
+  <a href="#template" class="md-nav__link">
+    Template
   </a>
   
 </li>
@@ -224,29 +243,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    Input
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#visualizacion" class="md-nav__link">
-    Visualización
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sonido" class="md-nav__link">
-    Sonido
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comunicaciones" class="md-nav__link">
-    Comunicaciones
+  <a href="#hello-word" class="md-nav__link">
+    Hello Word
   </a>
   
 </li>
@@ -255,18 +253,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../phaser3/" title="Empezando con Phaser 3" class="md-nav__link">
-      Empezando con Phaser 3
-    </a>
   </li>
 
     
@@ -296,23 +282,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gameloop" class="md-nav__link">
-    Gameloop
+  <a href="#herramientas" class="md-nav__link">
+    Herramientas
   </a>
   
-    <nav class="md-nav" aria-label="Gameloop">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-proyecto" class="md-nav__link">
+    Crear proyecto
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear proyecto">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sleep-time" class="md-nav__link">
-    Sleep time
+  <a href="#console" class="md-nav__link">
+    Console
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delta-time" class="md-nav__link">
-    Delta time
+  <a href="#template" class="md-nav__link">
+    Template
   </a>
   
 </li>
@@ -323,29 +316,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    Input
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#visualizacion" class="md-nav__link">
-    Visualización
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sonido" class="md-nav__link">
-    Sonido
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comunicaciones" class="md-nav__link">
-    Comunicaciones
+  <a href="#hello-word" class="md-nav__link">
+    Hello Word
   </a>
   
 </li>
@@ -366,39 +338,17 @@
                   
                 
                 
-                <h1 id="estructura-de-un-juego">Estructura de un juego</h1>
-<p>Cada vez que ejecutamos un videojuego, dentro del ordenador se están ejecutando muchos procesos de forma secuencial y ordenados. Aunque a simple vista parece que cada elemento funcione de forma independiente y con vida propia, en realidad los procesos internos están ejecutandose y coordinandose entre sí, dentro de un bucle que se ejecuta una y otra vez.</p>
-<h2 id="gameloop">Gameloop</h2>
-<p>Aunque existen muchas variantes del ciclo de vida de un juego, podríamos visualizar de forma muy resumida y básica como el siguiente esquema:</p>
-<p><img alt="Gameloop" src="../assets/images/game-loop.jpg" /> </p>
-<p>En cada iteración del bucle, el motor de juego debe leer los controles de entrada, ejecutar la lógica del juego, dibujar la pantalla y vuelta a empezar. </p>
-<p>El número de veces por segundo que se ejecuta dicho bucle es lo que llamamos FPS (frames per second), que significa el número de veces que el juego pinta la pantalla y por tanto, suponemos que actualiza la lógica del juego. A mayor número de FPS más fluido se verá el juego. Por contra a menor número de FPS más a trompicones se verá el juego. </p>
-<p>El nivel aceptable de FPS suele oscilar en torno a los 60 FPS, aunque es posible una buena experiencia de juego con un ratio incluso por debajo de los 30 FPS.</p>
-<p>En un mundo idílico, este bucle se ejecutaría de forma constante y continua a lo largo del tiempo y en todas las plataformas donde se ejecute, y el número de FPS sería altísimo. Pero en la realidad esto no es así debido a la diversidad de procesadores y la complejidad de algunos cálculos, por lo que el motor de juego debe realizar un control sobre cada iteración del bucle.</p>
-<p>Aquí es donde entran en juego dos pequeñas utilidades que suelen utilizar los motores de juego para realizar el control de FPS.</p>
-<h3 id="sleep-time">Sleep time</h3>
-<p>Si elegimos un objetivo de FPS para nuestro juego, el motor de juego al terminar la iteración en curso, podría calcular cuanto le ha llevado ejecutar la iteración completa y esperar una determinada cantidad de milisegundos para conseguir 'frenar' la ejecución de FPS. Por ejemplo, si nuestro objetivo es llegar a una tasa de 60 FPS, necesitamos ejecutar cada iteración del bucle en 1000 / 60 ms, unos 16,6 ms. Si el motor termina una iteración y detecta que ha tardado menos tiempo, manda a dormir al proceso hasta que se cumplan esos 16,6 ms.</p>
-<p>De esta forma, obtendremos una ejecución más o menos homogénea de cada iteración del juego.</p>
-<p>Además, si el procesador está muy saturado ejecutando cálculos y el motor de juego detecta un desvío muy grande en el tiempo de ejecución de esos 16,6 ms, el motor es capaz de 'saltarse' frames de forma puntual. Esto hará que la tasa de FPS sea un dato que oscile alrededor de 60 FPS, pero que no siempre será igual.</p>
-<div class="admonition info">
-<p class="admonition-title">Consejo</p>
-<p>Para nuestra tranquilidad, de esto se encarga el motor de juego mediante la configuración inicial, por lo que no debemos preocuparnos demasiado.</p>
-</div>
-<h3 id="delta-time">Delta time</h3>
-<p>Para evitar que el salto de FPS afecte a la lógica del juego y el jugador perciba ese cambio de velocidad de ejecución, es necesario que los cálculos estén siempre basados en un delta time, o incremento de tiempo.</p>
-<p>Volvamos al ejemplo de antes, donde la tasa de refresco era de 60 FPS y por tanto 16,6 ms en cada iteración. Si queremos que un personaje se desplace en la pantalla a razón de 100 pixels por segundo, lo lógico es hacer que en cada iteración se desplace unos 1,6 pixels. Al cabo de las 60 iteraciones, se habrá desplazado 100 pixels. </p>
-<p>¿Pero que pasaría si en el segundo número 3, el motor de juego decidiera saltarse frames para liberar procesamiento y en lugar de ejecutar 60 frames en un segundo, ejecutara 55 frames? Con este escenario tendríamos que nuestro personaje se habría desplazado 100 pixels en primer segundo, otros 100 pixels el segundo y 88 pixels el tercero. El usuario percibiría que el personaje a veces va rápido y otras veces va lento.</p>
-<p>Para evitar esto, el cálculo de desplazamiento no debería estar basado en la tasa de FPS, sino en el deltaTime, el tiempo que el procesador ha gastado en la última iteración. En nuestro ejemplo, el delta time debería ser 16,6 ms en cada iteración, salvo cuando el procesador se salte algún frame, que en ese caso el delta time será mayor a 16,6 ms ya que contendrá el incremento de tiempo que el procesador no pudo gastar.</p>
-<p>Si queremos que nuestro personaje se mueva 100 pixels en 1 segundo, eso significa que deberemos moverlo 0,1 pixels cada 1 milisegundo. En las iteraciones 'buenas', desplazaremos el personaje 0,1 * 16,6 = 1,6 pixels, pero en los tiempos de saturación es posible que nuestro delta time sea por ejemplo 24 ms y tengamos que desplazar el personaje 0,1 * 24 = 2,4 pixels. </p>
-<p>Esto hará que nuestro personaje de pequeños saltos imperceptibles a la vista humana (suelen ser del orden de uno o dos pixels), pero conseguiremos que en el cómputo global de 1 segundo, se habrá desplazado exactamente 100 pixels, y el jugador no percibirá cambios de ritmo en el personaje.</p>
-<div class="admonition info">
-<p class="admonition-title">Consejo</p>
-<p>Para nuestra tranquilidad, de esto se encarga el motor de juego y nos calcula e informa del deltaTime que debemos utilizar en cada iteración. Nosotros tan solo debemos preocuparnos de realizar los cálculos basados siempre en este deltaTime.</p>
-</div>
-<h2 id="input">Input</h2>
-<h2 id="visualizacion">Visualización</h2>
-<h2 id="sonido">Sonido</h2>
-<h2 id="comunicaciones">Comunicaciones</h2>
+                <h1 id="empezando-con-phaser-3">Empezando con Phaser 3</h1>
+<p>TODO</p>
+<h2 id="herramientas">Herramientas</h2>
+<p>TODO</p>
+<h2 id="crear-proyecto">Crear proyecto</h2>
+<p>TODO</p>
+<h3 id="console">Console</h3>
+<p>TODO</p>
+<h3 id="template">Template</h3>
+<p>TODO</p>
+<h2 id="hello-word">Hello Word</h2>
                 
               
               
@@ -417,7 +367,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Pie">
         
-          <a href=".." title="Bienvenido!" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../intro/" title="Estructura de un juego" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -426,25 +376,11 @@
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Bienvenido!
+                Estructura de un juego
               </div>
             </div>
           </a>
         
-        
-          <a href="../phaser3/" title="Empezando con Phaser 3" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Siguiente
-                </span>
-                Empezando con Phaser 3
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
         
       </nav>
     </div>
