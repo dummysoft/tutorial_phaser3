@@ -7,7 +7,7 @@ Cada vez que ejecutamos un videojuego, dentro del ordenador se están ejecutando
 
 Aunque existen muchas variantes del ciclo de vida de un juego, podríamos visualizar de forma muy resumida y básica como el siguiente esquema:
 
-![Gameloop](assets/images/game-loop.jpg) 
+![Gameloop](assets/images/game-loop.png) 
 
 En cada iteración del bucle, el motor de juego debe leer los controles de entrada, ejecutar la lógica del juego, dibujar la pantalla y vuelta a empezar. 
 
